@@ -15,10 +15,11 @@ response = request.json()
 currency_text = str()
 
 for currency_to_show in SETTINGS['currency']['to_show']:
-	currency_text += """{0}: {1}\n""".format(currency_to_show, response['rates'][currency_to_show])
+	value = response['rates'][currency_to_show]
+	currency_text += """{0}: <b>{1}</b>\n""".format(currency_to_show, value)
 
 notification = {
-    'header': 'Dollar Now',
+    'header': 'Currencies Now',
     'text': currency_text
 }
 

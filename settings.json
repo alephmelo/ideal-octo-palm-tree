@@ -1,6 +1,6 @@
 {
 	"currency": {
 		"base" : "USD",
-		"to_show": ["BRL", "EUR"]
+		"to_show": ["BRL", "EUR", "PLN"]
 	}
 }
