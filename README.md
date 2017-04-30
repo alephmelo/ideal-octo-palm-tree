@@ -12,6 +12,6 @@ I need to figure out how to add the shortcut dinamically in the panel.
 - [ ] Add other stuff, like wheater and time-zones.
 
 # Demo (work in progress)
-![demo1](assets/demo1.png)
+![demo1](assets/demo.png)
 
 ![demo2](assets/demo2.png)
