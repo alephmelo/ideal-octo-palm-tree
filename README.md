@@ -8,8 +8,9 @@ I need to figure out how to add the shortcut dinamically in the panel.
 
 # TODO
 - [x] Add a better API wrapper.
-- [x] Json file for settings and preferences.
+- [x] JSON file for settings and preferences.
 - [ ] Add other stuff, like wheater and time-zones.
+- [ ] JSON db for better caching or memoization. 
 
 # Demo (work in progress)
 ![demo1](assets/demo.png)
