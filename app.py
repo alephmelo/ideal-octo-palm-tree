@@ -1,15 +1,10 @@
 """main module."""
 import notify2
 import requests
-from utils import get_settings
+from utils import get_settings, APIS
 
 
 notify2.init("notification_init")
-
-APIS = {
-    'promasters': 'http://api.promasters.net.br/cotacao/v1/valores?moedas={}',
-    'fixer': 'http://api.fixer.io/latest?base={}'
-}
 
 SETTINGS = get_settings()
 
