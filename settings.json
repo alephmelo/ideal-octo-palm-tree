@@ -2,5 +2,10 @@
 	"currency": {
 		"base" : "USD",
 		"to_show": ["BRL", "EUR", "PLN"]
+	},
+	"timezones": {
+		"base": "America/Fortaleza",
+		"to_show": ["Europa/Lisbon", "Asia/Tokyo"],
+		"tz_info_list": "https://en.wikipedia.org/wiki/List_of_tz_database_time_zones"
 	}
 }
