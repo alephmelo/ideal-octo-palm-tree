@@ -16,7 +16,7 @@ def currency_notification():
 
     for currency_to_show in SETTINGS['currency']['to_show']:
         value = response['rates'][currency_to_show]
-        currency_text += """{0}: <b>{1}</b>\n""".format(currency_to_show, value)
+        currency_text += """{0}: <b>{1:>10}</b>\n""".format(currency_to_show, value)
 
     notification = {
         'header': 'Currencies Now',
@@ -31,7 +31,21 @@ def currency_notification():
 def timezone_notification():
     utc = arrow.utcnow()
 
-    n = notify2.Notification("notification['header']", "notification['text']")
+    tz_text = ""
+
+    for tz in SETTINGS['timezones']['to_show']:
+        tz_date = utc.to(tz).format("HH:mm")
+        city = tz.split("/")
+        print(city, len(city))
+        size = len(tz_text)
+        tz_text += """{0:<12}<b>{1:>12}</b>\n""".format(city[1], tz_date)
+
+    notification = {
+        'header': 'Timezones',
+        'text': tz_text
+    }
+
+    n = notify2.Notification(notification['header'], notification['text'])
     n.show()
     n.set_timeout(100)
 
