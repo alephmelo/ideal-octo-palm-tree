@@ -10,6 +10,7 @@ I need to figure out how to add the shortcut dinamically in the panel.
 - [x] Add a better API wrapper.
 - [x] JSON file for settings and preferences.
 - [ ] Add other stuff, like wheater and time-zones.
+- [ ] Fix padding in time-zones feature.
 - [ ] JSON db for better caching or memoization. 
 
 # Demo (work in progress)
