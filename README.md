@@ -7,11 +7,12 @@ TODO.
 I need to figure out how to add the shortcut dinamically in the panel.
 
 # TODO
-- [ ] Add a better API wrapper.
-- [ ] Command line utility for management and preferences.
+- [x] Add a better API wrapper.
+- [x] JSON file for settings and preferences.
 - [ ] Add other stuff, like wheater and time-zones.
+- [ ] JSON db for better caching or memoization. 
 
 # Demo (work in progress)
-![demo1](assets/demo1.png)
+![demo1](assets/demo.png)
 
 ![demo2](assets/demo2.png)
